@@ -1,1 +1,47 @@
 // Navigation Styles here
+nav {
+  padding: 2rem 0 3rem;
+  border-bottom: 2px dashed @navigation-border;
+  .responsive({
+    padding-bottom: 1rem;
+  });
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .responsive({
+      flex-direction: column;
+    });
+
+    .nav-start {
+      .logo {
+        .responsive({
+          font-size: 3.5rem;
+        });
+      }
+      .responsive({
+        margin-bottom: 1rem;
+      });
+    }
+
+    .nav-end {
+      .responsive({
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      });
+
+      .link {
+        text-decoration: none;
+        font-size: 1.7rem;
+        color: @font-color;
+        margin-right: 3rem;
+        .responsive({
+          margin-right: 0;
+        });
+      }
+    }
+  }
+}

@@ -1,1 +1,20 @@
 // Mixins in here
+.button(@width; @height; @bgColor; @textColor; @fontSize; @borderRadius) {
+  width: @width;
+  height: @height;
+  background: @bgColor;
+  color: @textColor;
+  font-size: @fontSize;
+  border: none;
+  border-radius: @borderRadius;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.responsive(@rules) {
+  @media @mobile {
+    @rules()
+  }
+}
