@@ -14,11 +14,19 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+      .responsive({
+        width: 100%;
+        padding: 0 0;
+      });
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      .responsive({
+        width: 100%;
+        padding: 0 0;
+      });
 
       img {
         border-radius: 10px;
@@ -33,17 +41,29 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      .responsive({
+        width: 100%;
+        padding: 0 0;
+      });
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      .responsive({
+        order: 1;
+        width: 100%;
+        padding: 0 0;
+      });
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    .responsive({
+      width: 100%;
+    });
 
     img {
       border-radius: 10px;
@@ -55,13 +75,25 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    .responsive({
+      flex-direction: column;
+      align-items: center;
+      padding-left: 3rem;
+      padding-right: 3rem;
+    });
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .responsive({
+        width: 100%;
+      });
 
       .btn {
-        .button(1rem; 5rem; darken(@eastern-blue, 10); @white; 1.7rem; 1rem)
+        .button(100%; 4.5rem; darken(@eastern-blue, 10); @white; 1.7rem; 1rem);
+        .responsive({
+          background: @eastern-blue;
+        });
       }
     }
   }

@@ -168,6 +168,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
 nav {
   padding: 2rem 0 3rem;
   border-bottom: 2px dashed #C0C0C0;
@@ -243,9 +248,21 @@ nav .navbar .nav-end .link {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    padding: 0 0;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding: 0 0;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -258,13 +275,31 @@ nav .navbar .nav-end .link {
   padding-left: 1%;
   padding-right: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    width: 100%;
+    padding: 0 0;
+  }
+}
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    order: 1;
+    width: 100%;
+    padding: 0 0;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-destination img {
   border-radius: 10px;
@@ -275,17 +310,37 @@ nav .navbar .nav-end .link {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+  }
+}
 .home .content-pick .destination .btn {
-  max-width: 20rem;
-  text-align: center;
-  padding: 1rem 5rem;
+  width: 100%;
+  height: 4.5rem;
   background: #117a8b;
   color: #FFFFFF;
   font-size: 1.7rem;
   border: none;
   border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    background: #17A2B8;
+  }
 }

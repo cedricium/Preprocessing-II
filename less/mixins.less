@@ -1,13 +1,16 @@
 // Mixins in here
-.button(@paddingX; @paddingY; @bgColor; @textColor; @fontSize; @borderRadius) {
-  max-width: 20rem;
-  text-align: center;
-  padding: @paddingX @paddingY;
+.button(@width; @height; @bgColor; @textColor; @fontSize; @borderRadius) {
+  width: @width;
+  height: @height;
   background: @bgColor;
   color: @textColor;
   font-size: @fontSize;
   border: none;
   border-radius: @borderRadius;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .responsive(@rules) {
