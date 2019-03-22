@@ -168,6 +168,24 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  padding: 2rem 0 3rem;
+  border-bottom: 2px dashed #C0C0C0;
+}
+nav .navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav .navbar .logo {
+  margin-right: auto;
+}
+nav .navbar .link {
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: #212529;
+  margin-right: 3rem;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
