@@ -1,1 +1,11 @@
 // Mixins in here
+.button(@paddingX; @paddingY; @bgColor; @textColor; @fontSize; @borderRadius) {
+  max-width: 20rem;
+  text-align: center;
+  padding: @paddingX @paddingY;
+  background: @bgColor;
+  color: @textColor;
+  font-size: @fontSize;
+  border: none;
+  border-radius: @borderRadius;
+}

@@ -249,3 +249,13 @@ nav .navbar .link {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  max-width: 20rem;
+  text-align: center;
+  padding: 1rem 5rem;
+  background: #117a8b;
+  color: #FFFFFF;
+  font-size: 1.7rem;
+  border: none;
+  border-radius: 1rem;
+}
